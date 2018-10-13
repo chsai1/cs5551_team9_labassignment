@@ -1,0 +1,84 @@
+
+.bgg{
+    background-color: brown;
+    font-family: Playbill;
+    text-decoration-color: aliceblue;
+    color: aliceblue;
+    align-content: center;
+    font-size: 40px;
+}
+#info {
+    font-size: 30px;
+}
+#div_start {
+    float: right;
+}
+#headline {
+    text-decoration: none
+}
+#results {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    min-height: 150px;
+    color: white;
+}
+#start_button {
+    border: 0;
+    background-color:transparent;
+    padding: 0;
+}
+.interim {
+    color: gray;
+}
+.final {
+    color: black;
+    padding-right: 3px;
+}
+.button {
+    display: none;
+}
+.marquee {
+    margin: 20px auto;
+}
+
+#buttons {
+    margin: 10px 0;
+    position: relative;
+    top: -50px;
+}
+
+#copy {
+    margin-top: 20px;
+}
+
+#copy > div {
+    display: none;
+    margin: 0 70px;
+}
+
+a.c1 {font-weight: normal;}
+.table1{
+    font-size: 15px;
+    color: white;
+    font-family: "Arial Black" ;
+}
+.tb1{
+    background-color: forestgreen;
+}
+.myedit{
+    font-size: 15px;
+    font-family: "Times New Roman";
+    color: #90ffee;
+}
+.btn-primary{
+    margin-bottom: 10px;
+}
+h2.h22{
+    float: right;
+    font-size: 25px;
+    font-family: "Times New Roman";
+    font-weight: normal;
+}

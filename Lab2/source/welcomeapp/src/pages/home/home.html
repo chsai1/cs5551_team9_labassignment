@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body{
+      background-color: mediumpurple;
+    }
+    button{
+      background-color: green ;/* Green */
+      border: none;
+      color: white;
+      padding: 15px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+  </style>
+
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="angular.min.js"></script>
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="ng-cordova.min.js"></script>
+
+
+  <script src="Homepage.js"></script>
+</head>
+<body class="body" ng-app="myApp">
+
+
+  <h1 align="center">IONIC MASHUP</h1>
+
+    <div class="body" ng-controller="View1Ctrl">
+
+
+      <div align="center"><input type="text" size="35" id="search" ng-model="search">
+        <button id="btn" ng-click="getDetails()">Search</button>
+      </div><br>
+      <div>
+        <P id="notes"></P>
+      </div>
+      <div align="center"><input type="button" value="Scan barcode" ng-click="scanBarCode()"/> </div>
+
+      <div align="center"><input type="button" value="Display youtube videos" ng-click="getVideos(searchQuery)" >
+
+
+
+
+
+
+      </div>
+      <br/>
+      <br/>
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+</html>
