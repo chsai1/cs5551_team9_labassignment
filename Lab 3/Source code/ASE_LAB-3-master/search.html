@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title style="text-align: center;color:white">Search</title>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-resource.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="search.js"></script>
+
+    <style>
+        body,.contact-form {
+            background: darkslateblue;
+        }
+        .type{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            alignment: center;
+        }
+        .but {
+            background-color: #4CAF50; /* Green */
+            alignment: center;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+<p></p>
+<div ng-app="demo" ng-controller="Search">
+<form class="contact_form"  ng-submit="search()" name="contact_form">
+    <input class="type" type="text" class="textbox1" name="major" placeholder="major" ng-model="major" required />
+    <br>
+    <input class="but" type="submit" name="Search" value="search"/>
+    <div id="result" ng-model="result">
+
+    </div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html ng-app="demoMongo" ng-controller="MongoRestController" xmlns:border="http://www.w3.org/1999/xhtml"
+      xmlns:background="http://java.sun.com/JSP/Page">
+<head >
+    <title>Mongo DB</title>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-resource.js"></script>
+    <script type="text/javascript" src="http://code.angularjs.org/1.1.1/angular-sanitize.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="bower_components/angular-base64/angular-base64.js"></script>
+    <script src="home.js"></script>
+    <style>
+        .siri{
+            display:table;
+            margin:0 auto;
+        }
+        .type{
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .type1{
+            width: 25%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .but {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        body,.contact-form {
+            background: lightskyblueblue;
+        }
+
+    </style>
+</head>
+<body>
+<h1 style="text-align: center;color:white">WELCOME</h1>
+<div class="container text-center" style="text-align: center">
+<form ng-submit="predict()">
+    <div>
+        <input class="type" type ="text" id ="image" name = "image" ng-model="image"/>
+        <input class="but" type="submit" name ="predict" value="predict"/>
+    </div>
+    <div class="container text-center">
+        <table id = "Predict_result" style="margin:0 auto" border:1px solid black>
+        </table>
+    </div>
+    <div class="text-center">
+        <input class="type" type=" text" name="search" id ="search">
+        <input class="but" type ="button" name ="Get"  ng-click="GetData()" value="predicted data"><p></p>
+        <div class ="siri text-center">
+            <table id ="searchimg"></table>
+        </div> <br>
+        <input class="type1" type=" text" name="search" id ="existingdata">
+        <input class="type1" type = "text" name ="update" id="update" placeholder="update">
+        <input class="but" type = "button" name ="Edit" ng-click="EditData()" value="edit"> <br>
+        <input class="type" type="text" name="search" id ="deletedata">
+        <input class="but" type = "button" name ="Delete" ng-click="Delete()" value ="delete">
+
+    </div>
+</form>
+    <canvas id="myCanvas"></canvas>
+
+
+</div>
+</body>
+</html>
